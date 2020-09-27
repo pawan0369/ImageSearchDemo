@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/pawan/Desktop/Projects/ImageSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_search_images.xml",
+        "source": "/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/res/layout/list_search_images.xml"
+    },
+    {
+        "merged": "/Users/pawan/Desktop/Projects/ImageSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_dashboard.xml",
+        "source": "/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/res/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "/Users/pawan/Desktop/Projects/ImageSearch/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_image_details.xml",
+        "source": "/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/res/layout/activity_image_details.xml"
+    }
+]

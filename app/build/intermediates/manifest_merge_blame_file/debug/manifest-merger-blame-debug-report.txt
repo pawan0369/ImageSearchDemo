@@ -1,0 +1,74 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.demo.imagesearch"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:8:5-26:19
+15        android:name="com.demo.imagesearch.AppController"
+15-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:9:9-38
+16        android:allowBackup="true"
+16-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.3.1] /Users/pawan/.gradle/caches/transforms-2/files-2.1/3fad7ea4f0b845c6f6667debb95e1494/core-1.3.1/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@mipmap/ic_launcher"
+19-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:11:9-43
+20        android:label="@string/app_name"
+20-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.Base" >
+24-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:15:9-42
+25        <activity
+25-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:16:9-17:51
+26            android:name="com.demo.imagesearch.ui.dashboard.ImageDetailsActivity"
+26-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:16:19-68
+27            android:screenOrientation="portrait" />
+27-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:17:13-49
+28        <activity
+28-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:18:9-25:20
+29            android:name="com.demo.imagesearch.ui.dashboard.DashboardActivity"
+29-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:18:19-65
+30            android:screenOrientation="portrait" >
+30-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:19:13-49
+31            <intent-filter>
+31-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:20:13-24:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:21:17-69
+32-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:21:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:23:17-77
+34-->/Users/pawan/Desktop/Projects/ImageSearch/app/src/main/AndroidManifest.xml:23:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <service
+38-->[androidx.room:room-runtime:2.2.5] /Users/pawan/.gradle/caches/transforms-2/files-2.1/dc134f7c7c0cdfbb5f4a8b70f7dbf478/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+39            android:name="androidx.room.MultiInstanceInvalidationService"
+39-->[androidx.room:room-runtime:2.2.5] /Users/pawan/.gradle/caches/transforms-2/files-2.1/dc134f7c7c0cdfbb5f4a8b70f7dbf478/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+40            android:directBootAware="true"
+40-->[androidx.room:room-runtime:2.2.5] /Users/pawan/.gradle/caches/transforms-2/files-2.1/dc134f7c7c0cdfbb5f4a8b70f7dbf478/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+41            android:exported="false" />
+41-->[androidx.room:room-runtime:2.2.5] /Users/pawan/.gradle/caches/transforms-2/files-2.1/dc134f7c7c0cdfbb5f4a8b70f7dbf478/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+42    </application>
+43
+44</manifest>
