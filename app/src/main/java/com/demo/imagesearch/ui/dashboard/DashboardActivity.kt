@@ -50,9 +50,13 @@ class DashboardActivity : DataBindingActivity<ActivityDashboardBinding>() {
         initObserver()
 
         binding.ivSearch.setOnClickListener {
-            searchKey = binding.etSearch.text.toString()
-            viewModel.getSearchResult(pageNumber.toString(), searchKey)
-                .observe(this, searchObserver)
+            if (isNetworkConnected()) {
+                searchKey = binding.etSearch.text.toString()
+                viewModel.getSearchResult(pageNumber.toString(), searchKey)
+                    .observe(this, searchObserver)
+            }else{
+                showSnackBar(getString(R.string.err_connection))
+            }
         }
     }
 
@@ -76,9 +80,13 @@ class DashboardActivity : DataBindingActivity<ActivityDashboardBinding>() {
     private fun initObserver() {
         binding.etSearch.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
-                searchKey = v.text.toString()
-                viewModel.getSearchResult(pageNumber.toString(), searchKey)
-                    .observe(this, searchObserver)
+                if (isNetworkConnected()) {
+                    searchKey = v.text.toString()
+                    viewModel.getSearchResult(pageNumber.toString(), searchKey)
+                        .observe(this, searchObserver)
+                }else{
+                    showSnackBar(getString(R.string.err_connection))
+                }
                 return@setOnEditorActionListener true
             }
             return@setOnEditorActionListener false
@@ -102,10 +110,11 @@ class DashboardActivity : DataBindingActivity<ActivityDashboardBinding>() {
                 is ApiResult.OnSuccess -> {
                     binding.etSearch.setText("")
                     val resultResponse = state.response.data
+                    Log.d("P-Response", resultResponse.toString())
                     hasNext = resultResponse.isNotEmpty()
                     if (hasNext) viewModel.setSearchData(resultResponse)
-                    else showSnackBar("No data found.")
-                    Log.d("P-Response", resultResponse.toString())
+                    else showSnackBar(getString(R.string.no_data))
+
                     if (pb_bottom.isVisible) pb_bottom.visibility = View.GONE
                     if (loader?.isShowing!!) loader?.dismiss()
                 }
@@ -124,9 +133,7 @@ class DashboardActivity : DataBindingActivity<ActivityDashboardBinding>() {
     private val onScrollListener = object : RecyclerView.OnScrollListener() {
         override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
             super.onScrolled(recyclerView, dx, dy)
-
             val manager = binding.rvImages.layoutManager as GridLayoutManager
-
             val visibleItemCount: Int = manager.childCount
             val totalItemCount: Int = manager.itemCount
             val firstVisibleItemPosition: Int = manager.findFirstVisibleItemPosition()

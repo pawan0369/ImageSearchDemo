@@ -3,4 +3,6 @@
     <string name="search_here">Search here</string>
     <string name="add_comment">Add comment for the image here</string>
     <string name="submit">Submit</string>
+    <string name="err_connection">Please check your internet connection.</string>
+    <string name="no_data">No data found.</string>
 </resources>

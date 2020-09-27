@@ -10,7 +10,12 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f14177f-cf09-4b69-b81b-85a001b29694" name="Default Changelist" comment="initial commit" />
+    <list default="true" id="1f14177f-cf09-4b69-b81b-85a001b29694" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/demo/imagesearch/ui/dashboard/DashboardActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/demo/imagesearch/ui/dashboard/DashboardActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,7 +169,19 @@
       <option name="presentableId" value="Default" />
       <updated>1601106306690</updated>
     </task>
+    <task id="LOCAL-00001" summary="code commit">
+      <created>1601218384425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601218384426</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="code commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="code commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1601148212832">
@@ -197,18 +214,19 @@
     </state>
     <state x="317" y="165" key="AndroidCreateResourceFileDialog/0.23.1440.797@0.23.1440.797" timestamp="1601141782331" />
     <state x="317" y="165" key="AndroidCreateResourceFileDialog/0.23.1440.798@0.23.1440.798" timestamp="1601125691283" />
-    <state x="584" y="257" key="AndroidCreateXmlResourceDialog" timestamp="1601198901909">
-      <screen x="0" y="23" width="1440" height="798" />
+    <state x="584" y="257" key="AndroidCreateXmlResourceDialog" timestamp="1601218737855">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state x="584" y="257" key="AndroidCreateXmlResourceDialog/0.23.1440.797@0.23.1440.797" timestamp="1601218737855" />
     <state x="584" y="257" key="AndroidCreateXmlResourceDialog/0.23.1440.798@0.23.1440.798" timestamp="1601198901909" />
     <state x="585" y="175" key="AndroidProcessChooserDialog" timestamp="1601214436711">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state x="585" y="175" key="AndroidProcessChooserDialog/0.23.1440.798@0.23.1440.798" timestamp="1601214436711" />
-    <state x="334" y="23" key="CommitChangelistDialog2" timestamp="1601218331908">
+    <state x="334" y="23" key="CommitChangelistDialog2" timestamp="1601218382189">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state x="334" y="23" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1601218331908" />
+    <state x="334" y="23" key="CommitChangelistDialog2/0.23.1440.797@0.23.1440.797" timestamp="1601218382189" />
     <state width="1358" height="239" key="GridCell.Tab.0.bottom" timestamp="1601214517392">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
@@ -245,6 +263,10 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state width="1358" height="239" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1601214517394" />
+    <state x="329" y="143" key="Vcs.Push.Dialog.v2" timestamp="1601218481175">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="329" y="143" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1601218481175" />
     <state x="506" y="188" key="chooseDestDirectoryDialog" timestamp="1601109354732">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
@@ -268,7 +290,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/demo/imagesearch/ui/dashboard/DashboardActivity.kt</url>
-          <line>92</line>
+          <line>100</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
